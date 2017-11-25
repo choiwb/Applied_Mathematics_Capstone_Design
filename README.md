@@ -13,5 +13,8 @@
  - (3) Alexnet accuracy : cats : 87.04% , dogs : 83.33% , validation set : cats(77 images) , dogs(77 images)
  -  accuracy : cats : 92.68%, dogs : 89.02% , validation set : cats(976 images) , dogs(976 images)
  - (4) Googlenet (I recommend using GPU better than CPU, because of time spending.) 
- -  accuracy : 93.48% , validation set : cats(77 images) , dogs(77 images)
+ -  accuracy : 93.33% , validation set : cats(77 images) , dogs(77 images) -cross validation : 5, minibatch size : 32, validation : 0.2
+ -  accuracy : 93.48% , validation set : cats(77 images) , dogs(77 images) -cross validation : 3, minibatch size : 10, validation : 0.3
+ -  accuracy : 94.74% , validation set : cats(77 images) , dogs(77 images) -cross validation : 4, minibatch size : 32, validation : 0.25
+ - * mini batch size : 64 -> GPU out of memory
  -  accuracy : 76.09% , DWT(Discrete Wavelet Transform) validation set : cats(77 images) , dogs(77 images)
