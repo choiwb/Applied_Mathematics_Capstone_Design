@@ -4,7 +4,7 @@ googlenet
 unzip('vald.zip');
 images = imageDatastore('vald','IncludeSubfolders',true,'LabelSource','foldernames');
 images.ReadFcn = @(loc)imresize(imread(loc),[224,224]);
-[trainImages,valImages] = splitEachLabel(images,0.7,'randomized');
+[trainImages,valImages] = splitEachLabel(images,0.75,'randomized');
 
 net = googlenet;
 lgraph = layerGraph(net);
@@ -27,12 +27,12 @@ plot(lgraph)
 ylim([0,10])
 
 options = trainingOptions('sgdm',...
-    'MiniBatchSize',10,...
+    'MiniBatchSize',32,...
     'MaxEpochs',3,...
     'InitialLearnRate',1e-4,...
     'VerboseFrequency',1,...
     'ValidationData',valImages,...
-    'ValidationFrequency',3);
+    'ValidationFrequency',4);
 
 net = trainNetwork(trainImages,lgraph,options);
 
