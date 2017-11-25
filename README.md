@@ -16,5 +16,5 @@
  -  accuracy : 93.33% , validation set : cats(77 images) , dogs(77 images) -cross validation : 5, minibatch size : 32, validation : 0.2
  -  accuracy : 93.48% , validation set : cats(77 images) , dogs(77 images) -cross validation : 3, minibatch size : 10, validation : 0.3
  -  accuracy : 94.74% , validation set : cats(77 images) , dogs(77 images) -cross validation : 4, minibatch size : 32, validation : 0.25
- - * mini batch size : 64 -> GPU out of memory
+ -  mini batch size : 64 -> GPU out of memory
  -  accuracy : 76.09% , DWT(Discrete Wavelet Transform) validation set : cats(77 images) , dogs(77 images)
